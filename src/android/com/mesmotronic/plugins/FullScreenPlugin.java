@@ -277,8 +277,8 @@ public class FullScreenPlugin extends CordovaPlugin
 					window.clearFlags
 					(
 						WindowManager.LayoutParams.FLAG_FULLSCREEN 
-						| WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION 
-						| WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
+						//| WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION 
+						//| WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
 					);
 					
 			        // Update system UI
