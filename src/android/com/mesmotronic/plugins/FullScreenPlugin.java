@@ -60,10 +60,10 @@ public class FullScreenPlugin extends CordovaPlugin
                 // Clear flag FLAG_FORCE_NOT_FULLSCREEN which is set initially
                 // by the Cordova.
                 Window window = cordova.getActivity().getWindow();
-                window.clearFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
+                //window.clearFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
 
                 // Read 'StatusBarBackgroundColor' from config.xml, default is #000000.
-                setStatusBarBackgroundColor(preferences.getString("StatusBarBackgroundColor", "#000000"));
+                //setStatusBarBackgroundColor(preferences.getString("StatusBarBackgroundColor", "#000000"));
             }
         });
     }
