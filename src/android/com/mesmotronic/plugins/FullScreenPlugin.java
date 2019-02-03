@@ -277,6 +277,7 @@ public class FullScreenPlugin extends CordovaPlugin
 					window.clearFlags
 					(
 						WindowManager.LayoutParams.FLAG_FULLSCREEN 
+						// me: do not remove translucent
 						//| WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION 
 						//| WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
 					);
@@ -321,6 +322,7 @@ public class FullScreenPlugin extends CordovaPlugin
 				{
 					resetWindow();
 					
+					// me: remove translucent navigation
 					window.clearFlags
 					(
 						//WindowManager.LayoutParams.FLAG_FULLSCREEN 
