@@ -327,12 +327,13 @@ public class FullScreenPlugin extends CordovaPlugin
 					(
 						//WindowManager.LayoutParams.FLAG_FULLSCREEN 
 						WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION 
-						//| WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
+						| WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
 					);
 					
 					// Make the status bar translucent
 					
-			        window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+			        //window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+			        window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, false);
 			        
 			        // Extend view underneath status bar
 					
